@@ -5,13 +5,13 @@
 The common way of fetching data is by sending a HTTP request to the server, alongside a URL which specifies the data and a resource identifier. An example would be:    
 GET /user/:id where you would fill the :id with an id (string or number) and it gets that specific user, you could remove the /:id portion and it would typically fetch all users instead. This can get very messy, turning into something like the following for a social media post: GET /user/12/post/32/comments to fetch all comments. You can also add path parameters, so we could extend on the social media comment post by doing a GET /user/12/post/32/comments?likes_gt=30. The _gt stands for greater than to imply we want to fetch all comments with over 30 likes. 
 ### HTTP Request types
-POST - Inputting/creating data.
-PUT - Updating data by replacing all fields.
-PATCH - Partially update a resource.
-HEAD - Retrieving headers for a resource like HTTP Status codes, Content-Type, Content-Length, Last-Modified etc.
-OPTIONS - Check what methods are supported. 
-DELETE - Deleting data
-GET - Fetching data (can be used in frameworks like express to also tell the server to render a web page with said data). 
+POST - Inputting/creating data.       
+PUT - Updating data by replacing all fields.       
+PATCH - Partially update a resource.      
+HEAD - Retrieving headers for a resource like HTTP Status codes, Content-Type, Content-Length, Last-Modified etc.      
+OPTIONS - Check what methods are supported.      
+DELETE - Deleting data      
+GET - Fetching data (can be used in frameworks like express to also tell the server to render a web page with said data).      
 ### Return Type
 It often returns data in JSON format, but can also return HTML,CSV, XML making it very portable. 
 
